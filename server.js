@@ -9,6 +9,7 @@ var express = require('express'),
     router = require('./app/routes/index'),
     session = require('express-session'),
     helmet = require('helmet');
+    compression = require('compression');
 var session = require('express-session');
 var redisStore = require('connect-redis')(session);
 var redis = require("redis");
@@ -16,6 +17,7 @@ var client = redis.createClient();
 
 app.use(cookieParser()); // read cookies (needed for auth)
 app.use(bodyParser()); // get information from html forms
+app.use(compression()); //use compression
 
 require('./app/repo/passport')(passport);
 
