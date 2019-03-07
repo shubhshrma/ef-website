@@ -3,23 +3,16 @@
 
 <head>
 
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-3945322165039178",
-            enable_page_level_ads: true
-        });
-    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+
     <meta name="google-site-verification" content="bIgzhiYzJX-z_6EqT39MpkW7wN8J7zbpD_8puZbvKeM" />
     <link rel="icon" href="image/header_logo.png" />
 
 
-    <title>Flutur</title>
+    <title>Flutur - New Tab</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/jquery-ui.js"></script>
@@ -29,10 +22,7 @@
     <script src="js/chromeExtension.js"></script>
 
 
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
     <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,23 +31,99 @@
     <link rel="stylesheet" href="/css-min/dropdown.min.css">
     <link rel="stylesheet" href="/css-min/slider.min.css">
     <link rel="stylesheet" href="/css-min/mobile-view.min.css">
+    <link rel="stylesheet" href="/css/blog.css">
+
+    <meta name="description" content="At Flutur, we convert your otherwise wasted hours into real donations through the Flutur effect. Try out the Flutur New Tab Chrome Extention">
+
+    <style>
+        .blog-img {
+            width: 100%;
+            height: 250px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+        }
+        
+        .more-pink-title {
+            color: #EF2A67;
+            font-family: Quicksand;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 18px;
+        }
+        
+        .nav>li>a:focus,
+        .nav>li>a:hover {
+            text-decoration: none;
+            background-color: transparent;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            color: #ddd;
+        }
+        
+        .nav>li>a {
+            padding: 10px 15px;
+        }
+        
+        .btn-med {
+            font-family: Quicksand;
+            border-radius: 300px;
+            padding: 8px 18px;
+            font-size: 12px;
+        }
+        
+        h1,
+        h2,
+        h3 {
+            letter-spacing: 0px;
+        }
+        
+        @media all and (max-width: 699px) {
+            .category-container {
+                display: none;
+            }
+            .category-container-small {
+                display: block;
+                width: 100%;
+                margin: 40px 0px 10px 0px;
+            }
+            .blogs-link {
+                padding: 30px 30px 60px 30px;
+            }
+        }
+        
+        @media screen and (min-width: 700px) {
+            .blogs-link {
+                padding: 50px 50px 70px 50px;
+            }
+            .category-container {
+                margin: 40px 0px 10px 0px;
+                width: 100%;
+                height: 80px;
+            }
+            .category-container-small {
+                display: none;
+            }
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111348597-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111348597-1');
+    </script>
 </head>
 
 <body id="page-top">
-
-    <script type="text/javascript">
-        var clicky_site_ids = clicky_site_ids || [];
-        clicky_site_ids.push(101088359);
-        (function() {
-            var s = document.createElement('script');
-            s.type = 'text/javascript';
-            s.async = true;
-            s.src = '//static.getclicky.com/js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
-        })();
-    </script> <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101088359ns.gif" />
-            </p></noscript>
-
     <nav id="mainNav" class="navbar" style="z-index:10; margin-top:10px;margin-bottom:-100px;">
         <div class="container" style="width:95%">
             <div class="navbar-header">
@@ -69,12 +135,26 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-top: 15px;padding-right: 15px;">
                 <ul class="nav navbar-nav navbar-right">
-
+                    <li class="li-no-padding" style="margin-right:40px">
+                        <a class="white" target="_top" href="/blog">
+                            <b class="quick-weight-bold"> BLOG</b>
+                        </a>
+                    </li>
+                    <li class="li-no-padding" style="margin-right:40px">
+                        <a class="white" target="_top" href="/faqs">
+                            <b class="quick-weight-bold"> FAQs</b>
+                        </a>
+                    </li>
+                    <li class="li-no-padding" style="margin-right:40px">
+                        <a class="white" target="_top" href="/privacy">
+                            <b class="quick-weight-bold"> PRIVACY</b>
+                        </a>
+                    </li>
                     <li>
                         <div class="btn-outline btn-med" style="font-size:12px; cursor:pointer">
                             <!-- <i class="fa fa-venus-mars" aria-hidden="true"></i> -->
                             <a class="white" target="_top" href="https://chrome.google.com/webstore/detail/flutur-small-flutters-cau/onebagjpomhjadhoiianmnelkbcnllnf" style="padding: 20px; text-decoration:none!important; height:100%; width:100%">
-                                <b class="quick-weight-bold"> CHROME PLUGIN</b>
+                                <b> CHROME PLUGIN</b>
                                 <i class="fa fa-angle-right" style="font-size:15px; margin-left:5px" aria-hidden="true"></i>
                             </a>
                         </div>
@@ -91,8 +171,55 @@
         <%- include desktop_home_partial.ejs %>
     </div>
 
+    <section class="bg-lightgrey blogs-link">
 
-    <section class="benefitting-ngos bg-lightgrey">
+        <div class="category-container">
+            <div class="title-container" style="width:50%; float:left">
+                <h1 class="black-quicksand-title">
+                    <% if (typeof category != 'undefined') { %>
+                        <%- category.category_name %>
+                            <% } else {%>
+                                Flutur Blogs &amp; Stories
+                                <% } %>
+                </h1>
+            </div>
+        </div>
+
+        <div class="category-container-small">
+            <h1 class="black-quicksand-title" style="text-align: center">
+                <% if (typeof category != 'undefined') { %>
+                    <%- category.category_name %>
+                        <% } else {%>
+                            Flutur Blogs &amp; Stories
+                            <% } %>
+            </h1>
+        </div>
+
+        <div class="grid-row" style="margin-bottom:20px;">
+            <% for(var i=0; i<blogs.length; i++) { %>
+                <div class="grid-column">
+                    <a href="/blog/<%-blogs[i].blog_id%>">
+                            <div class="blog-img" style="background-image:url('<%-blogs[i].title_photo_url%>');">
+                            </div>
+                            <div style="height:95px">
+                            <h2 class="blog-outside-title black">
+                                <%- blogs[i].blog_title%>
+                            </h2>
+                            <h3 class="blog-short-desc">
+                                <%- blogs[i].blog_short_desc%>
+                            </h3>
+                        </div>
+                        </a>
+                </div>
+                <% } %>
+        </div>
+        <a href="/blog" class="more-pink-title" style="float:right;">
+                View All <i class="fa fa-angle-right" style="font-size:15px; margin-left:5px" aria-hidden="true"></i>
+            </a>
+
+    </section>
+
+    <section class="benefitting-ngos bg-white">
         <div class="black-quicksand-big-title" style="margin-bottom: 40px">Benefitting NGOs</div>
         <div>
             <div class="container-fluid">

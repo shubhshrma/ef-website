@@ -15,27 +15,13 @@
 
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css-min/new-age.min.css" rel="stylesheet">
-    <link href="/css-min/styles.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/mobile-view.css">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/blog.css">
 
 
 
     <style>
-        .big-title {
-            color: #000000;
-            font-family: Quicksand;
-            font-size: 80px;
-            font-weight: bold;
-            line-height: 100px;
-        }
-        
-        .big-subtitle {
-            color: #4D4D4D;
-            font-family: Quicksand;
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 25px;
-        }
-        
         .small-title {
             color: #650F66;
             font-family: Quicksand;
@@ -110,88 +96,97 @@
             }
         }
     </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111348597-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111348597-1');
+    </script>
+
 </head>
 
-<body>
+<body style="display:none">
 
-    <nav id="mainNav" class="navbar navbar-default">
-        <div class="container" style="width:95%">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header" style="margin-top:10px">
-                <a class="navbar-brand page-scroll" href="http://www.flutur.org">
-                    <img src="/image/flutur_logo_black.png">
-                </a>
+    <%- include standard-header.ejs %>
+
+        <div style="width:80%; margin: 0 auto; padding: 10px 10px 10px 10px;">
+            <div class="big-title" style="margin:20px 0px 10px 0px">FAQs</div>
+            <div class="big-subtitle">You seem curious. Scroll down and you will get the answers to everything that people ask us.</div>
+
+            <div class="small-title">My conributions</div>
+            <div class="accordion">
+                <h4 class="accordion-toggle">How do I donate?</h4>
+                <div class="accordion-content">
+                    <li>At the end of a week, you will get an option to donate to a cause</li>
+                    <li>The cause would be the one which you selected at the beginning of the week</li>
+                    <li>Make sure you continue to donate every week!</li>
+                </div>
+
+                <h4 class="accordion-toggle">How much do I contribute by opening a tab?</h4>
+                <div class="accordion-content">
+                    <li>The amount presently varies between 0.1 to 0.25 paise per tab</li>
+                    <li>On an average, a person opens 25 tabs a day. The resulting amount is enough to feed 7 meals to an underprivileged child</li>
+                </div>
+
+                <h4 class="accordion-toggle">When does my contribution reach NGOs?</h4>
+                <div class="accordion-content">
+                    <li>At the end of every month, we make donations to the NGOs</li>
+                    <li>We calculate the total funds raised for each cause, and then equally divide those amongst the partner NGOs of that cause</li>
+                </div>
+                <h4 class="accordion-toggle">How are the NGOs selected?</h4>
+                <div class="accordion-content">
+                    <li>NGO should be registered, should have a valid 12A, and their accounts should be audited over at least the last 2 years</li>
+                    <li>Presently we are working only with NGOs based in India</li>
+                </div>
+                <h4 class="accordion-toggle">How can I play a larger role?</h4>
+                <div class="accordion-content">
+                    <li>You are a true samaritan! You could start with getting more of your friends to use the chrome app. Do keep checking our homepage for new projects - we need people like you to help us reach out to more people.</li>
+                </div>
             </div>
+
+            <div class="small-title">General</div>
+            <div class="accordion">
+                <h4 class="accordion-toggle">How do I whitelist this website on my adblocker?</h4>
+                <div class="accordion-content">
+                    <li>Click Adblock extention in your browser</li>
+                    <li>Click on “don’t run on pages from this domain”</li>
+                </div>
+
+                <h4 class="accordion-toggle">How can I view relevant ads?</h4>
+                <div class="accordion-content">
+                    Ads are completely sourced from a third party provider. Do get in touch with us if you see irrelevant ads.
+                </div>
+
+                <h4 class="accordion-toggle">Can I sign up without Google or Facebook?</h4>
+                <div class="accordion-content">
+                    Not yet. Presently we uniquely identify you based on your google or facebook id. We need to save your past donations, preferences and make those available across devices.
+                </div>
+                <h4 class="accordion-toggle">What information we collect about you?</h4>
+                <div class="accordion-content">
+                    We only save your name, email and google/facebook id. We will never share any details.
+                </div>
+            </div>
+            <%- include contact_partial_small.ejs %>
+
         </div>
-    </nav>
 
-
-    <div style="width:80%; margin: 0 auto; padding: 10px 10px 10px 10px;">
-        <div class="big-title" style="margin:20px 0px 10px 0px">FAQs</div>
-        <div class="big-subtitle">You seem curious. Scroll down and you will get the answers to everything that people ask us.</div>
-
-        <div class="small-title">My conributions</div>
-        <div class="accordion">
-            <h4 class="accordion-toggle">How do I donate?</h4>
-            <div class="accordion-content">
-                <li>At the end of a week, you will get an option to donate to a cause</li>
-                <li>The cause would be the one which you selected at the beginning of the week</li>
-                <li>Make sure you continue to donate every week!</li>
-            </div>
-
-            <h4 class="accordion-toggle">How much do I contribute by opening a tab?</h4>
-            <div class="accordion-content">
-                <li>The amount presently varies between 0.1 to 0.25 paise per tab</li>
-                <li>On an average, a person opens 25 tabs a day. The resulting amount is enough to feed 7 meals to an underprivileged child</li>
-            </div>
-
-            <h4 class="accordion-toggle">When does my contribution reach NGOs?</h4>
-            <div class="accordion-content">
-                <li>At the end of every month, we make donations to the NGOs</li>
-                <li>We calculate the total funds raised for each cause, and then equally divide those amongst the partner NGOs of that cause</li>
-            </div>
-            <h4 class="accordion-toggle">How are the NGOs selected?</h4>
-            <div class="accordion-content">
-                <li>NGO should be registered, should have a valid 12A, and their accounts should be audited over at least the last 2 years</li>
-                <li>Presently we are working only with NGOs based in India</li>
-            </div>
-            <h4 class="accordion-toggle">How can I play a larger role?</h4>
-            <div class="accordion-content">
-                <li>You are a true samaritan! You could start with getting more of your friends to use the chrome app. Do keep checking our homepage for new projects - we need people like you to help us reach out to more people.</li>
-            </div>
+        <div class="resp-footer">
+            <%- include footer_partial.ejs %>
         </div>
-
-        <div class="small-title">General</div>
-        <div class="accordion">
-            <h4 class="accordion-toggle">How do I whitelist this website on my adblocker?</h4>
-            <div class="accordion-content">
-                <li>Click Adblock extention in your browser</li>
-                <li>Click on “don’t run on pages from this domain”</li>
-            </div>
-
-            <h4 class="accordion-toggle">How can I view relevant ads?</h4>
-            <div class="accordion-content">
-                Ads are completely sourced from a third party provider. Do get in touch with us if you see irrelevant ads.
-            </div>
-
-            <h4 class="accordion-toggle">Can I sign up without Google or Facebook?</h4>
-            <div class="accordion-content">
-                Not yet. Presently we uniquely identify you based on your google or facebook id. We need to save your past donations, preferences and make those available across devices.
-            </div>
-            <h4 class="accordion-toggle">What information we collect about you?</h4>
-            <div class="accordion-content">
-                We only save your name, email and google/facebook id. We will never share any details.
-            </div>
+        <div class="small-resp-footer">
+            <%- include footer_small_partial.ejs %>
         </div>
-        <%- include contact_partial_small.ejs %>
-
-    </div>
-
-    <%- include footer_partial.ejs %>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
             $(document).ready(function() {
+                $("body").fadeIn(800);
                 $('.accordion').find('.accordion-toggle').click(function() {
                     $(this).next().slideToggle('600');
                 });

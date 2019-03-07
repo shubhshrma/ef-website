@@ -4,12 +4,6 @@ body,
     height: 100%;
     background-size: 800% 800%;
     animation: AnimationName 18s ease infinite;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 @-webkit-keyframes AnimationName {
@@ -960,4 +954,26 @@ button:focus {
 .benefitting-ngos {
     text-align: center;
     padding: 100px 0;
+}
+
+.big-title {
+    color: #000000;
+    font-family: Quicksand;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+.big-subtitle {
+    color: #4D4D4D;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    color: #777777;
+    background-color: white;
 }
